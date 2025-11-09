@@ -4,7 +4,7 @@
   export default function RootLayout() {
     return (
       <Stack screenOptions={{
-        headerShown: false,
+        // headerShown: false,
       }}>
         <Stack.Screen name="/" />
         <Stack.Screen name="join" />
@@ -13,19 +13,3 @@
     );
   }
 
-
-
-
-
-//   import { Stack } from "expo-router";
-
-// export default function RootLayout() {
-//   return (
-//     <Stack
-//       screenOptions={{
-//         // headerSho
-//         // wn: false, // hides headers globally
-//       }}
-//     />
-//   );
-// }
