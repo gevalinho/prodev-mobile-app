@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import React, { useState } from "react";
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -32,7 +33,7 @@ export default function SignIn() {
         </TouchableOpacity>
 
         <Text style={styles.linkText}>
-          Don’t have an account? <Text style={styles.linkHighlight}>Join now</Text>
+          Don’t have an account? <Text style={styles.linkHighlight} onPress={() => router.push("/profile")}>Join now</Text>
         </Text>
       </View>
     </SafeAreaView>
